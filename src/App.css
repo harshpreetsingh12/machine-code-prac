@@ -1,0 +1,83 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+/* Assignemnts */
+
+.productList{
+  display: flex;
+  flex-wrap: wrap;
+  gap:20px;
+  width:100%;
+  padding:20px;
+}
+
+.product{
+  width:300px;
+  display:flex;
+  flex-direction: column;
+  border:1px solid black;
+}
+
+.product img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.productLower{
+  padding:10px;
+}
+.productLower h4, .productLower p{
+  margin:0px;
+  margin-top:5px;
+}
+.filterSwtich{
+  display:flex;
+  gap:10px;
+  
+}
+.categoris{
+  display:flex;
+  gap:10px;
+
+}
