@@ -1,6 +1,7 @@
 import React, { useContext, useMemo, useRef, useState } from 'react'
 import ProductCard from '../components/ProductCard'
 import { CartContextCreated } from '../context/CartContext'
+import TagInput from '../components/TagInput'
 
 const Home = () => {
   const { products:cartProducts } =useContext(CartContextCreated)
@@ -96,7 +97,7 @@ const Home = () => {
 
   return (
     <div>
-      {/* Navbar */}
+     
       {/* filter */}
       <div className='filterSwtich'>
         <div className='categoris'>
