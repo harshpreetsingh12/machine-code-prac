@@ -6,6 +6,7 @@ import Cart from "./components/Cart";
 import CartContext from "./context/CartContext";
 import UserType from "./pages/UserType";
 import PaginatedProducts from "./pages/PaginatedProducts";
+import TextDiff from "./pages/TextDiff";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Router>
         <Layout>
           <Routes>
+            <Route path="/textDiff" element={<TextDiff/>} />
             <Route path="/pagination" element={<PaginatedProducts/>} />
             <Route path="/userType" element={<UserType/>} />
             <Route path="/" element={<Home/>} />
