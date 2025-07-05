@@ -8,6 +8,7 @@ import UserType from "./pages/UserType";
 import PaginatedProducts from "./pages/PaginatedProducts";
 import TextDiff from "./pages/TextDiff";
 import InfiniteScroll from "./pages/InfiniteScroll";
+import TableSearch from "./pages/TableSearch";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Router>
         <Layout>
           <Routes>
+            <Route path="/tableSearch" element={<TableSearch/>} />
             <Route path="/infinteScroll" element={<InfiniteScroll/>} />
             <Route path="/textDiff" element={<TextDiff/>} />
             <Route path="/pagination" element={<PaginatedProducts/>} />
